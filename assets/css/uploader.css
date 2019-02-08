@@ -7,8 +7,7 @@
   border-radius: 3px;
   position: relative;
   outline: none;
-  overflow: hidden;
-  display: inline-block;
+  display: block;
   vertical-align: top;
 }
 .responsiv-uploader-fileupload .upload-object img {
@@ -16,7 +15,7 @@
   height: 100%;
 }
 .responsiv-uploader-fileupload .upload-object .icon-container {
-  display: table;
+  /*display: table;*/
   opacity: .6;
 }
 .responsiv-uploader-fileupload .upload-object .icon-container i {
@@ -44,12 +43,12 @@
   transition: padding 0.1s;
   position: relative;
 }
-.responsiv-uploader-fileupload .upload-object h4 a {
-  position: absolute;
-  right: 0;
-  top: 0;
-  font-weight: 400;
-}
+/*.responsiv-uploader-fileupload .upload-object h4 a {*/
+  /*position: absolute;*/
+  /*right: 0;*/
+  /*top: 0;*/
+  /*font-weight: 400;*/
+/*}*/
 .responsiv-uploader-fileupload .upload-object p.size,
 .responsiv-uploader-fileupload .upload-object p.error {
   font-size: 12px;
@@ -65,9 +64,6 @@
 }
 .responsiv-uploader-fileupload .upload-object .info h4 a,
 .responsiv-uploader-fileupload .upload-object .meta a.upload-remove-button {
-  color: #FFDD5F;
-  font-size: 24px;
-  line-height: 16px;
   text-decoration: none;
 }
 .responsiv-uploader-fileupload .upload-object .icon-container {
@@ -112,7 +108,9 @@
 .responsiv-uploader-fileupload .upload-object.is-success:hover h4 a,
 .responsiv-uploader-fileupload .upload-object.is-success:hover .meta .upload-remove-button {
   display: block;
-  color: #dc3545;
+}
+.basic-page .container.basic-content .col-md-2 .upload-remove-button:hover {
+    color: #dc3545;
 }
 .responsiv-uploader-fileupload .upload-object.is-error {
   cursor: pointer;
@@ -410,23 +408,23 @@
   right: 0;
   margin: 0 15px;
 }
-.responsiv-uploader-fileupload.style-image-single .upload-object:hover h4 {
-  padding-right: 20px;
-}
-.responsiv-uploader-fileupload.style-image-single .upload-object.is-error h4 {
-  padding-right: 20px;
-}
+/*.responsiv-uploader-fileupload.style-image-single .upload-object:hover h4 {*/
+  /*padding-right: 20px;*/
+/*}*/
+/*.responsiv-uploader-fileupload.style-image-single .upload-object.is-error h4 {*/
+  /*padding-right: 20px;*/
+/*}*/
 .responsiv-uploader-fileupload.style-image-single .upload-object.is-error .info p.size {
   display: none;
 }
 .responsiv-uploader-fileupload.style-image-single .upload-object.is-error .info p.error {
   padding-bottom: 11px;
 }
-@media (max-width: 1024px) {
-  .responsiv-uploader-fileupload.style-image-single .upload-object h4 {
-    padding-right: 20px !important;
-  }
-}
+/*@media (max-width: 1024px) {*/
+  /*.responsiv-uploader-fileupload.style-image-single .upload-object h4 {*/
+    /*padding-right: 20px !important;*/
+  /*}*/
+/*}*/
 .responsiv-uploader-fileupload.style-file-multi .upload-button {
   margin-bottom: 10px;
 }
